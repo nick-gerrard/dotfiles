@@ -61,6 +61,8 @@ return {
               client.notify('$/onDidChangeTsOrJsFile', { uri = ctx.match })
             end,
           })
+        end,
+      },
       tailwindcss = {
         on_attach = function(client)
           client.server_capabilities.colorProvider = nil
