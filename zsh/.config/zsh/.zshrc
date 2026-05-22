@@ -7,6 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/Applications/love.app/Contents/MacOS:$PATH"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   plugins=(git sudo)
