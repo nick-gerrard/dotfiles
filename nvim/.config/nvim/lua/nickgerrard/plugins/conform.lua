@@ -1,11 +1,13 @@
 return {
-  'stevearc/conform.nvim',
+  "stevearc/conform.nvim",
   keys = {
     {
-      '<leader>f',
-      function() require('conform').format { async = true } end,
-      mode = { 'n', 'v' },
-      desc = '[F]ormat buffer',
+      "<leader>f",
+      function()
+        require("conform").format({ async = true })
+      end,
+      mode = { "n", "v" },
+      desc = "[F]ormat buffer",
     },
   },
   opts = {
@@ -23,6 +25,7 @@ return {
         css = true,
         tsx = true,
         typescriptreact = true,
+        go = true,
       }
       if enabled_filetypes[vim.bo[bufnr].filetype] then
         return { timeout_ms = 500 }
@@ -31,31 +34,32 @@ return {
       end
     end,
     default_format_opts = {
-      lsp_format = 'fallback',
+      lsp_format = "fallback",
     },
     formatters = {
       prettier = {
         command = function()
-          local local_prettier = vim.fn.findfile('node_modules/.bin/prettier', vim.fn.getcwd() .. ';')
-          if local_prettier ~= '' then
+          local local_prettier = vim.fn.findfile("node_modules/.bin/prettier", vim.fn.getcwd() .. ";")
+          if local_prettier ~= "" then
             return local_prettier
           end
-          return 'prettier'
+          return "prettier"
         end,
       },
     },
     formatters_by_ft = {
-      python = { 'ruff_fix', 'ruff_format' },
-      lua = { 'stylua' },
-      javascript = { 'prettier' },
-      typescript = { 'prettier' },
-      html = { 'djlint', 'prettier' },
-      htmldjango = { 'djlint', 'prettier' },
-      sql = { 'sql-formatter' },
-      svelte = { 'prettier' },
-      css = { 'prettier' },
-      tsx = { 'prettier' },
-      typescriptreact = { 'prettier' },
+      python = { "ruff_fix", "ruff_format" },
+      lua = { "stylua" },
+      javascript = { "prettier" },
+      typescript = { "prettier" },
+      html = { "djlint", "prettier" },
+      htmldjango = { "djlint", "prettier" },
+      sql = { "sql-formatter" },
+      svelte = { "prettier" },
+      css = { "prettier" },
+      tsx = { "prettier" },
+      typescriptreact = { "prettier" },
+      go = { "goimports" },
       -- rust = { "rustfmt" },
       -- javascript = { "prettierd", "prettier", stop_after_first = true },
     },
