@@ -53,7 +53,7 @@ vim.keymap.set('n', '<leader>ht', '<cmd>hsplit<cr>', { desc = 'Split the buffer 
 
 -- Navigate open buffers
 vim.keymap.set('n', '[b', '<cmd>bprev<cr>', {desc = 'Jump to previous buffer'})
-vim.keymap.set('n', '[b', '<cmd>bnext<cr>', {desc = 'Jump to next buffer'})
+vim.keymap.set('n', ']b', '<cmd>bnext<cr>', {desc = 'Jump to next buffer'})
 
 vim.api.nvim_create_user_command('LspRestart', function()
   local clients = vim.lsp.get_clients({ bufnr = 0 })
