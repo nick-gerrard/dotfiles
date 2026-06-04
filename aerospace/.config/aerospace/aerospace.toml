@@ -7,14 +7,15 @@ default-root-container-orientation = 'auto'
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 
-persistent-workspaces = ["1", "2", "3"]
+persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "S", "D", "Z"]
 # ── Gaps ────────────────────────────────────────────────────────────────────── [gaps] inner.horizontal = 8
 [gaps]
-inner.vertical   = 8
-outer.left       = 8
-outer.right      = 8
-outer.top        = 8
-outer.bottom     = 8
+inner.vertical   = 0
+inner.horizontal = 0
+outer.left       = 0
+outer.right      = 0
+outer.top        = 0
+outer.bottom     = 0
 
 # ── Default layout ────────────────────────────────────────────────────────────
 [workspace-to-monitor-force-assignment]
@@ -65,6 +66,9 @@ alt-5 = 'workspace 5'
 alt-6 = 'workspace 6'
 alt-7 = 'workspace 7'
 alt-8 = 'workspace 8'
+alt-s = 'workspace S'
+alt-d = 'workspace D'
+alt-z = 'workspace Z'
 
 # Move window to workspace
 alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
@@ -75,10 +79,15 @@ alt-shift-5 = ['move-node-to-workspace 5', 'workspace 5']
 alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
 alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
 alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
+alt-shift-s = ['move-node-to-workspace S', 'workspace S']
+alt-shift-d = ['move-node-to-workspace D', 'workspace D']
+alt-shift-z = ['move-node-to-workspace Z', 'workspace Z']
 
 # Reload config
 alt-shift-r = 'reload-config'
 alt-r = 'mode resize'
+# Screenshot
+alt-shift-p = 'exec-and-forget screencapture -i -c'
 
 [mode.resize.binding]
 h = 'resize width +50'

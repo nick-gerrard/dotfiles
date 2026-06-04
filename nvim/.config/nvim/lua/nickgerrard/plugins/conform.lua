@@ -26,6 +26,7 @@ return {
         tsx = true,
         typescriptreact = true,
         go = true,
+        json = true,
       }
       if enabled_filetypes[vim.bo[bufnr].filetype] then
         return { timeout_ms = 500 }
@@ -60,6 +61,7 @@ return {
       tsx = { "prettier" },
       typescriptreact = { "prettier" },
       go = { "goimports" },
+      json = { "prettier" },
       -- rust = { "rustfmt" },
       -- javascript = { "prettierd", "prettier", stop_after_first = true },
     },
