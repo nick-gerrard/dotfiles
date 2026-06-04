@@ -20,3 +20,6 @@ alias rpi2="ssh nickg@192.168.50.127"
 
 # Server SSH
 alias dev_server="ssh -i ~/.ssh/id_ed25519 nickg@pwhl.nickgerrard.dev"
+
+# Fix mirrors
+alias mirrorupdate="sudo reflector --country US --age 24 --protocol https --sort age --save /etc/pacman.d/mirrorlist"

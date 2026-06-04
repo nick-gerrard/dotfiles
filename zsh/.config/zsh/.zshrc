@@ -32,3 +32,6 @@ command -v zoxide &>/dev/null && eval "$(zoxide init zsh)"
 source $ZDOTDIR/.zsh_aliases
 
 [[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
+
+# opencode
+export PATH=/home/nickg/.opencode/bin:$PATH
