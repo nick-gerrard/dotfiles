@@ -43,11 +43,11 @@ hl.window_rule({ match = { class = "google-chrome-stable", title = "File Upload"
 
 -- Special Workspace: WhatsApp
 hl.window_rule({
-	match = { class = "WebApp-WhatsApp%d+" },
+	match = { class = "chrome-web.whatsapp.com__-Default" },
 	workspace = "special:messages",
 	float = true,
 	no_initial_focus = true,
-	size = "70% 80%",
+	size = {1920, 1080},
 	center = true,
 })
 
