@@ -2,6 +2,8 @@
 --- WINDOWS AND WORKSPACES ---
 ------------------------------
 
+-- Ghostty
+hl.window_rule({ match = {class="com.mitchellh.ghostty", float=false, workspace=1}})
 -- Steam & Launcher Rules
 hl.window_rule({ match = { class = "launcher" }, float = true, no_anim = true, size = "1000 750", center = true })
 hl.window_rule({ match = { title = "Sharing" }, float = true })
