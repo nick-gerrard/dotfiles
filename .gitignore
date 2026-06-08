@@ -1,3 +1,5 @@
+.DS_Store
 zsh/.config/zsh/.zcompdump*
 zsh/.config/zsh/.zsh_history
 nvim/.config/nvim/lazy-lock.json
+Thunar/.config/Thunar/accels.scm
